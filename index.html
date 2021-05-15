@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Bank</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/general-style.css">
+    <link rel="stylesheet" href="assets/css/transaction/transactions.css">
+    <link rel="stylesheet" href="assets/css/transaction/status.css">
+    <link rel="stylesheet" href="assets/css/popup/popup.css">
+    <link rel="stylesheet" href="assets/css/info/information.css">
+    <link rel="stylesheet" href="assets/css/form/form.css">
+    <link rel="stylesheet" href="assets/css/form/status.css">
+    <link rel="stylesheet" href="assets/css/form/alerts.css">
+</head>
+<body>
+    <div class="everything">
+        <div class="container">
+            <section class="layout">
+                <div>  
+    
+                    <div class="information">
+                        <span class="balance-text">Saldo disponível</span>
+                        <br>
+                        <span class="balance-dollar-sign"><i class="fas fa-dollar-sign"></i></span><span class="balance" id="clientBalance">$XXX,XXX.XX</span>
+                        <div class="account-actions">
+                            <div>
+                                <button class="withdraw-action" id="withdrawBTNConfig">SACAR</button>
+                            </div>
+                            <div>
+                                <button class="transfer-action" id="transferBTNConfig">TRANSFERIR</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="popup transfer-popup" id="popup-transfer">
+                        <div class="notification" id="transfer-notification">
+                            <p>Credenciais incorretas</p>
+                        </div>
+                        <form action="" method="GET" id="transferForm">
+                            <input type="text" id="transferFormValue" placeholder="VALOR" >
+                            <br>
+                            <input type="text" id="transferFormID" placeholder="ID">
+                            <br>
+                            <textarea id="transferFormNote" rows="5" placeholder="NOTA"></textarea>
+                            <br>
+                            <button type="submit" class="form-button button-transfer">TRANSFERIR</button>
+                        </form>
+                    </div>
+    
+                    <div class="popup withdraw-popup" id="popup-withdraw">
+                        <div class="notification" id="withdraw-notification">
+                            <p>Credenciais incorretas</p>
+                        </div>
+                        <form action="" method="GET" id="withdrawForm" class="padding-popup">
+                            <input type="text" id="withdrawFormValue" placeholder="VALOR">
+                            <br>
+                            <textarea id="withdrawFormNote" rows="5" placeholder="NOTA"></textarea>
+                            <br>
+                            <button type="submit" class="form-button button-withdraw">SACAR</button>
+                        </form>
+                    </div>
+    
+                </div>
+                <div class="transactions-column" id="transactions">
+                    <!-- SHOW RECENT TRANSACTIONS -->
+                </div>
+            </section>
+    
+            <img src="assets/img/LOGO-1-SEM-FUNDO.png" alt="LOGO-MAZE-BANK" class="maze-bank-logo">
+        </div>
+    </div>
+
+    <div class="alert" id="alert">
+        <span class="alert-close"><i class="fas fa-times"></i></span>
+        <div class="alert-content">
+            <i class="fas fa-check-circle"></i>
+            <h4><span class="alert-type">AÇÃO</span> efetuado(a) com successo</h4>
+            <br>
+        </div>
+    </div>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

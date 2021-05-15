@@ -1,0 +1,12 @@
+.notification {
+    background-color: #e1090a;
+    border: 1px solid #880606;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    display: none;
+}
+.notification.active {
+    display: block;
+}

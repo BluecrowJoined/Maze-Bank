@@ -1,0 +1,67 @@
+.information {
+    width: 300px;
+    min-height: 120px;
+    max-height: 150px;
+    z-index: 100;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #414141;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.balance-text {
+    text-decoration:underline;
+    font-weight: 600;
+    font-size: 18px;
+    color: #DEDEDE;    
+}
+
+.balance {
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+}
+
+.balance-dollar-sign i {
+    font-size: 32px;
+    margin-right: 5px;
+    color: #68B04F;
+}
+
+/*----------------------------------------*/
+
+.account-actions {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.account-actions button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.withdraw-action {
+    background: #68B04F;
+    float: left;
+}
+.withdraw-action:hover {
+    background: #599b43;
+}
+
+.transfer-action {
+    background: #425F89;
+    float: right;
+}
+.transfer-action:hover {
+    background: #3a5479;
+}

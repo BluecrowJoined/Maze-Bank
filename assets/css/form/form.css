@@ -1,0 +1,87 @@
+input {
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 1px solid #CBCBCB;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+input:nth-child(1) {
+    margin-top: 0px;
+}
+
+input:hover {
+    border: 2px solid #fff;
+}
+
+input:hover::placeholder {
+    color: #fff;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #CBCBCB;
+}
+
+/*---------------------------------------*/
+
+textarea {
+    height: 80px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 1px solid #CBCBCB;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:20px;
+    color: #fff;
+}
+
+textarea:hover {
+    border: 2px solid #fff;
+}
+
+textarea:hover::placeholder {
+    color: #fff;
+}
+
+textarea::placeholder {
+    text-align: center;
+    color: #CBCBCB;
+}
+
+/*---------------------------------------------*/
+
+.form-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.button-transfer {
+    background-color: #425F89;
+}
+.button-transfer:hover {
+    background: #3a5479;
+}
+
+.button-withdraw {
+    background-color: #68B04F;
+}
+.button-withdraw:hover {
+    background: #599b43;
+}

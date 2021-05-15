@@ -1,0 +1,106 @@
+.transactions-column {
+    width: 740px;
+    height: 650px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.transaction-box {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 740px;
+    min-height: 110px;
+    background-color: #414141;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+}
+
+.transaction-box:nth-child(1) {
+    margin-top: 0px;
+}
+
+.transaction-type {
+    width: 48px;
+    height: 21px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.transaction-divisor {
+    position: relative;
+    width: 700px;
+    border: 1px solid #CBCBCB;
+}
+
+.transaction-box table {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.transaction-box table td {
+    overflow-x: hidden;
+    width: 200px;
+}
+
+.transaction-box table td:nth-child(1) {
+    width: 300px;
+}
+
+.transaction-value {    
+    width: 106px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.transaction-name {
+    width: 117px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.transaction-date {
+    width: 117px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.transaction-note {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.transaction-note p {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform:unset;
+    color: #DEDEDE;
+}
+
+.transaction-note p span {
+    width: 39px;
+    height: 21px;
+    margin-right: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}

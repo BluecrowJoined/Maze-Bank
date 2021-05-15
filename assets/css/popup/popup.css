@@ -1,0 +1,21 @@
+.popup {
+    display: none;
+    width: 300px;
+    z-index: 10;
+    margin-top: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #414141;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.transfer-popup {  
+    min-height: 200px !important;
+}
+
+.withdraw-popup {
+    min-height: 150px !important;
+}
